@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/BgButton">
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MENU"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <Button
+            android:id="@+id/siswa"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#FFFFFF"
+            android:background="@color/color1"
+            android:text="Siswa"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/judul"
+            android:onClick="btnSiswa"/>
+
+        <Button
+            android:id="@+id/guru"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#FFFFFF"
+            android:background="@color/color1"
+            android:text="Guru"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/siswa"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <Button
+            android:id="@+id/mata_pelajaran"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="Mata Pelajaran"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#FFFFFF"
+            android:background="@color/color1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guru"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <Button
+            android:id="@+id/menu4"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="Jadwal Kelas"
+            android:textColor="#FFFFFF"
+            android:background="@color/color1"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mata_pelajaran"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <Button
+            android:id="@+id/menu5"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="EKSTRAKULIKULER"
+            android:textColor="#FFFFFF"
+            android:background="@color/color1"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/menu4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <Button
+            android:id="@+id/menu6"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="PETUGAS"
+            android:textColor="#FFFFFF"
+            android:background="@color/color1"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/menu5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <Button
+            android:id="@+id/menu7"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="PEGAWAI"
+            android:textColor="#FFFFFF"
+            android:background="@color/color1"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/menu6"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <Button
+            android:id="@+id/menu8"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="NILAI SISWA"
+            android:textColor="#FFFFFF"
+            android:background="@color/color1"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/menu7"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <Button
+            android:id="@+id/menu9"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="ABSEN SISWA"
+            android:textColor="#FFFFFF"
+            android:background="@color/color1"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/menu8"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <Button
+            android:id="@+id/menu10"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="DAFTAR PIKET"
+            android:textColor="#FFFFFF"
+            android:background="@color/color1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/menu9"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
